@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="harry.bjg.documentreaderofficereader">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_OfficeFileViewActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_SelectFileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_TextPdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_ImageFolderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_CreateDocActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_SelectPdfActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_PdfToDocActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_MyCreationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.ActivityFol.HARRY_ExcelPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.ActivityFol.HARRY_PptPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_FileListPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_Policy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_Exit"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="harry.bjg.documentreaderofficereader.HARRY_MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/YOUR_ADMOB_APP_ID" />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/option_lay"
+            android:layout_width="794px"
+            android:layout_height="136px"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/option_bg"
+            android:layout_margin="50px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/moveCenter"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/a_resize_button" />
+
+            <ImageView
+                android:id="@+id/onBC"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:contentDescription="@string/contrast"
+                android:layout_marginLeft="110px"
+                android:src="@drawable/a_brightness_button" />
+
+            <ImageView
+                android:id="@+id/brightness"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="110px"
+                android:src="@drawable/nightmodepress_button" />
+
+            <ImageView
+                android:id="@+id/prefTop"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="110px"
+                android:contentDescription="@string/preferences"
+                android:src="@drawable/a_setting_button" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/showHypenLangPanel"
+        layout="@layout/layout_hypen_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</LinearLayout>

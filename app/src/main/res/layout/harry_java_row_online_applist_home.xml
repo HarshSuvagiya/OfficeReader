@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_alignParentLeft="false"
+                android:layout_centerVertical="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop" />
+            
+             <TextView
+                android:id="@+id/title"
+                android:layout_width="@dimen/_93sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginTop="7dp"
+                android:singleLine="true"
+                 android:textSize="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+			    android:ellipsize="end"
+			    android:marqueeRepeatLimit="marquee_forever"
+			    android:scrollHorizontally="true" 
+			    android:focusable="true" 
+			    android:focusableInTouchMode="true" 
+			    android:freezesText="true"
+			    android:gravity="center"
+			    android:textColor="#5e5e5e"
+			    android:text="app name"/>
+              
+           <ImageView 
+               android:id="@+id/img"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="false"
+               android:layout_centerVertical="false"
+               android:layout_centerHorizontal="true"/>  
+               
+
+             
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_install"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="install"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/laybottom"
+            android:layout_width="1080px"
+            android:layout_height="224px"
+            android:background="@drawable/footer"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="37px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/playListParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/playListName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="Playlists"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/playListNameEdit"
+                    style="@style/textLinkWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:tag="textLink"
+                    android:text="@string/edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/playlistRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/autoScroll"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:contentDescription="@string/automatic"
+                    android:src="@drawable/play_button4"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/textToSpeach"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:contentDescription="@string/text_to_speech"
+                    android:src="@drawable/voice_button"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/onShowSearch"
+                    android:layout_width="270px"
+                    android:layout_height="180px"
+                    android:contentDescription="@string/search"
+                    android:src="@drawable/page_search" />
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="270px"
+                    android:layout_height="180px"
+                    android:contentDescription="@string/go_to_page_dialog"
+                    android:src="@drawable/page_find" />
+
+                <com.foobnix.pdf.search.view.HeightImageView
+                    android:id="@+id/onModeChange"
+                    android:layout_width="270px"
+                    android:layout_height="180px"
+                    android:src="@drawable/page_select"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/lockUnlock"
+                    android:layout_width="270px"
+                    android:layout_height="180px"
+                    android:contentDescription="@string/block_page_movement_horizontally"
+                    android:src="@drawable/lock_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</merge>

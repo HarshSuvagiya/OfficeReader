@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "harry.bjg.documentreaderofficereader"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a", "armeabi", "x86", "x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        ignoreWarnings true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(path: ':myoffice')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation project(path: ':Reader')
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation files('libs/jxl.jar')
+    implementation 'org.apache.commons:commons-lang3:3.8'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    implementation project(path: ':consentsdk')
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+
+    implementation 'com.itextpdf:itext-pdfa:5.5.7'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.eralpyucel:CircleProgressView:v1.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation "cz.msebera.android:httpclient:4.5.8"
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    implementation group: 'com.google.guava', name: 'guava', version: '18.0'
+
+    //    implementation project(path: ':bookreader')
+
+
+}

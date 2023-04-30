@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6432E3</color>
+    <color name="colorPrimaryDark">#6432E3</color>
+    <color name="colorAccent">#6432E3</color>
+    <color name="colorunselect">#838388</color>
+
+    <color name="white">#fff</color>
+    <color name="white_t">#88ffffff</color>
+    <color name="black">#000</color>
+    <color name="black_t">#88000000</color>
+    <color name="black_t_44">#44000000</color>
+    <color name="gray">#555555</color>
+    <color name="green">#40B423</color>
+
+    <color name="black_45">#454545</color>
+
+    <color name="txt_color">#4B4B4D</color>
+    <color name="txt_light_color">#AAABAF</color>
+</resources>

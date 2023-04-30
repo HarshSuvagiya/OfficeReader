@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Documents Reader - Office Readers Docs,XLSX Viewer</string>
+
+    <string name="mywork">My Converted Files</string>
+
+    <string name="p2d">Pdf To Doc</string>
+    <string name="p2t">Pdf To Text</string>
+    <string name="p2i">Pdf To Image</string>
+    <string name="p2h">Pdf To Html</string>
+    <string name="d2p">Doc To Pdf</string>
+    <string name="d2t">Doc To Text</string>
+    <string name="d2i">Doc To Image</string>
+    <string name="d2h">Doc To Html</string>
+    <string name="e2p">Excel To Pdf</string>
+    <string name="e2i">Excel To Image</string>
+    <string name="e2h">Excel To Html</string>
+    <string name="pp2p">PPT To Pdf</string>
+    <string name="pp2i">PPT To Image</string>
+    <string name="pp2h">PPT To Html</string>
+    <string name="pp2t">PPT To Text</string>
+
+    <string name="newdoc">https://www.offidocs.com/community/webofficenewdoc.php</string>
+
+    <string name="cloud_convert_key">T9QOJVv4hYAwTwgS3LdHujz7gUlg-qLiJJt50lxiVhOBkkS0IoVS1v2CdhTlQaA5-aQ_dzYUbdesQebereyZew</string>
+    <string name="zamzar_key">6d88ba465775c1f718440a45fba4eb14b9194</string>
+
+
+</resources>

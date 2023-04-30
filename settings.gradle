@@ -1,0 +1,2 @@
+include ':myoffice'
+include ':app', ':Reader', ':consentsdk', ':consent-library'
