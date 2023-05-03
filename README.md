@@ -2,6 +2,9 @@
 
 Office Reader allows you to read and view Word, Excel, PowerPoint, PDF, HTML, and eBook documents. No internet connection is required.
 
+## Screenshots
+<img src="sc1.jpg" width="250"><img src="sc2.png" width="250"><img src="sc3.png" width="250"><img src="sc4.png" width="250">
+
 ## Supported file formats:
 <ul>
 <li> DOC, DOCX (Microsoft Word) </li>
